@@ -1,0 +1,143 @@
+/* reset */
+html, body, div, span, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: normal;
+    line-height: 20px;
+    font-family: Roboto, 'Helvetica CY', Verdana, sans-serif;
+    color: #333;
+    padding-top: 95px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 24px;
+    color: #e1e1e1;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    color: #fafafa;
+}
+
+.box {
+    padding-left: 7px;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+    transform: translate3d(20px, 0, 0);
+    opacity: 0;
+}
+
+.active {
+    transform: translate3d(0px, 0, 0);
+    opacity: 1
+}
+
+/* header */
+.header {
+    width: 100%;
+    background: #1A1A1C;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-bottom: solid 1px #181818;
+}
+
+.header > div {
+    width: 1024px;
+    height: 94px;
+    margin: 0 auto;
+}
+
+.headline {
+    height: 61px;
+    padding-top: 21px;
+    border-bottom: solid 1px #38383B;
+}
+
+.menu {
+    display: inline-block;
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu li {
+    height: 33px;
+    line-height: 32px;
+    text-align: center;
+    float: left;
+}
+
+.menu li + li {
+    margin-left: 20px;
+}
+
+.menu span {
+    font-size: 12px;
+    color: #999;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.menu span:hover, .menu .active {
+    color: #fff;
+}
+
+/* content */
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.wrap > div {
+    margin-top: 1px;
+    padding: 50px;
+}
+
+.box1 {
+    height: 400px;
+    background: #919191;
+}
+
+.box2 {
+    height: 410px;
+    background: #A4A4A4;
+}
+
+.box3 {
+    height: 312px;
+    background: #B6B6B6;
+}
+
+.box4 {
+    height: 500px;
+    background: #C9C9C9;
+}
+
+.box5 {
+    height: 320px;
+    background: #DCDCDC;
+}
+
+.box6 {
+    height: 315px;
+    background: #ebebeb;
+}
+
+.box5 h2, .box6 h2 {
+    color: #a7a7a7;
+}
